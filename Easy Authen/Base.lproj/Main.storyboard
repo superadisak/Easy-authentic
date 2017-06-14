@@ -45,25 +45,27 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-oJ-9Hb">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-oJ-9Hb">
                                 <rect key="frame" x="147" y="241" width="61" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zks-3K-JrJ">
-                                <rect key="frame" x="6" y="291" width="369" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-H0-Wll">
+                                <rect key="frame" x="0.0" y="293" width="368" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <action selector="loginMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8r-fB-Mg3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="qaH-vD-Xo3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1JE-DM-o8O"/>
                             <constraint firstItem="0lh-NG-AgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="97" id="F4d-Z6-YSZ"/>
-                            <constraint firstItem="Zks-3K-JrJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="6" id="QZn-jE-tla"/>
                             <constraint firstItem="NhR-1b-TfB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="Qze-x3-QeR"/>
                             <constraint firstItem="NhR-1b-TfB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="120" id="SfG-Ms-Gfd"/>
                             <constraint firstItem="0lh-NG-AgS" firstAttribute="top" secondItem="NhR-1b-TfB" secondAttribute="bottom" constant="31" id="X93-3m-LVV"/>
@@ -75,18 +77,21 @@
                             <constraint firstItem="Xrd-Ll-6Tj" firstAttribute="top" secondItem="0lh-NG-AgS" secondAttribute="bottom" constant="34.5" id="hY4-C1-BT5"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qaH-vD-Xo3" secondAttribute="bottom" id="kae-hq-Vnf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0lh-NG-AgS" secondAttribute="trailing" constant="94" id="lcN-Ac-XuS"/>
-                            <constraint firstItem="Zks-3K-JrJ" firstAttribute="top" secondItem="I6j-oJ-9Hb" secondAttribute="bottom" constant="14" id="mTy-Pm-vvs"/>
                             <constraint firstItem="NhR-1b-TfB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="38" id="pyz-iw-waX"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Xrd-Ll-6Tj" secondAttribute="trailing" constant="94" id="q1h-kl-DhL"/>
-                            <constraint firstAttribute="trailing" secondItem="Zks-3K-JrJ" secondAttribute="trailing" id="sPN-3a-T1F"/>
                             <constraint firstAttribute="trailing" secondItem="qaH-vD-Xo3" secondAttribute="trailing" id="uU6-Mu-Qas"/>
                             <constraint firstItem="0lh-NG-AgS" firstAttribute="top" secondItem="NhR-1b-TfB" secondAttribute="bottom" constant="31" id="ub2-yR-3rO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="messageLabel" destination="I6j-oJ-9Hb" id="0Gd-k9-E8v"/>
+                        <outlet property="passWordTextField" destination="Xrd-Ll-6Tj" id="wpu-0R-3cI"/>
+                        <outlet property="userTextField" destination="0lh-NG-AgS" id="diE-Y9-hAf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="200.80000000000001" y="110.19490254872565"/>
+            <point key="canvasLocation" x="-789.60000000000002" y="296.40179910044981"/>
         </scene>
     </scenes>
     <resources>
