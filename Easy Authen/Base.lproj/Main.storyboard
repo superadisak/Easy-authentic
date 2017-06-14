@@ -52,15 +52,18 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9Z-H0-Wll">
-                                <rect key="frame" x="0.0" y="293" width="368" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Test"/>
                                 <connections>
-                                    <action selector="loginMethod:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K8r-fB-Mg3"/>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWk-Zf-br5"/>
+                                    <action selector="messageLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2S0-tT-0xK"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOH-Xy-gI7">
+                                <rect key="frame" x="156" y="299" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -84,14 +87,14 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="messageLabel" destination="I6j-oJ-9Hb" id="0Gd-k9-E8v"/>
+                        <outlet property="loginButton" destination="I6j-oJ-9Hb" id="SjS-tB-B4y"/>
                         <outlet property="passWordTextField" destination="Xrd-Ll-6Tj" id="wpu-0R-3cI"/>
                         <outlet property="userTextField" destination="0lh-NG-AgS" id="diE-Y9-hAf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-789.60000000000002" y="296.40179910044981"/>
+            <point key="canvasLocation" x="-33" y="120"/>
         </scene>
     </scenes>
     <resources>
